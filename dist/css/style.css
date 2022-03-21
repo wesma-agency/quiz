@@ -761,19 +761,19 @@ h2 {
 
 @-webkit-keyframes swing {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotateZ(5deg);
-            transform: translate(-50%, -50%) rotateZ(5deg); }
+    -webkit-transform: rotateZ(3deg) translate(-50%, -50%);
+            transform: rotateZ(3deg) translate(-50%, -50%); }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotateZ(-5deg);
-            transform: translate(-50%, -50%) rotateZ(-5deg); } }
+    -webkit-transform: rotateZ(-3deg) translate(-50%, -50%);
+            transform: rotateZ(-3deg) translate(-50%, -50%); } }
 
 @keyframes swing {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotateZ(5deg);
-            transform: translate(-50%, -50%) rotateZ(5deg); }
+    -webkit-transform: rotateZ(3deg) translate(-50%, -50%);
+            transform: rotateZ(3deg) translate(-50%, -50%); }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotateZ(-5deg);
-            transform: translate(-50%, -50%) rotateZ(-5deg); } }
+    -webkit-transform: rotateZ(-3deg) translate(-50%, -50%);
+            transform: rotateZ(-3deg) translate(-50%, -50%); } }
 
 @-webkit-keyframes swing2 {
   0% {
