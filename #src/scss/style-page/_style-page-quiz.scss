@@ -57,6 +57,7 @@
 		& img {
 			max-height: 280px;
 		}
+		animation: swing2 4s 0.1s infinite linear;
 	}
 
 	&__image-right {
@@ -68,6 +69,7 @@
 		& img {
 			max-height: 310px;
 		}
+		animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	}
 
 	&__image-bg {
@@ -217,6 +219,30 @@
 	}
 }
 
+@keyframes swing {
+	0% {
+		transform: translate(-50%, -50%) rotateZ(5deg);
+	}
+
+	100% {
+		transform: translate(-50%, -50%) rotateZ(-5deg);
+	}
+}
+
+@keyframes swing2 {
+	0% {
+		transform: rotateZ(0deg) translate3d(-30%, -50%, 0) rotateZ(0deg);
+	}
+
+	50% {
+		transform: rotateZ(20deg) translate3d(-30%, -50%, 0) rotateZ(-20deg);
+	}
+
+	100% {
+		transform: rotateZ(0deg) translate3d(-30%, -50%, 0) rotateZ(0deg);
+	}
+}
+
 .item-answer {
 	display: flex;
 	cursor: pointer;
@@ -263,7 +289,7 @@
 		box-shadow: -2.17893px -2.17893px 6.5368px #ffffff, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
 		border-radius: 21px;
 
-		transition: box-shadow 0.3s ease;
+		transition: box-shadow 0.3s ease, background 0.3s ease;
 
 		& span {
 			position: relative;
@@ -272,6 +298,10 @@
 	}
 
 	&:hover:not(.--disabled):not(.--true):not(.--false) .item-answer__text {
+		background: linear-gradient(90.52deg, rgba(174, 174, 192, 0.186) 38.89%, rgba(174, 174, 192, 0.042) 67.38%), #ededed;
+	}
+
+	&:active:not(.--disabled):not(.--true):not(.--false) .item-answer__text {
 		box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2);
 	}
 
@@ -356,6 +386,21 @@
 
 		&__image-right {
 			transform: translate(-30%, -50%);
+			left: 55%;
+		}
+	}
+
+	@keyframes swing2 {
+		0% {
+			transform: rotateZ(0deg) translate3d(-20%, -50%, 0) rotateZ(0deg);
+		}
+
+		50% {
+			transform: rotateZ(20deg) translate3d(-20%, -50%, 0) rotateZ(-20deg);
+		}
+
+		100% {
+			transform: rotateZ(0deg) translate3d(-20%, -50%, 0) rotateZ(0deg);
 		}
 	}
 }

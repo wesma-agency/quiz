@@ -49,7 +49,7 @@
 
 		font-weight: 300;
 		font-size: 18px;
-		line-height: 111%;
+		line-height: 140%;
 		letter-spacing: 0.02em;
 		color: #17293b;
 		& p {
@@ -104,6 +104,33 @@
 
 	&__button {
 	}
+
+	&__share {
+		display: flex;
+		align-items: center;
+	}
+
+	&__share-text {
+		margin-right: 25px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 120%;
+	}
+
+	&__share-yandex {
+		& .ya-share2__list.ya-share2__list_direction_horizontal > .ya-share2__item {
+			margin: 2px 10px 0 0;
+		}
+
+		& .ya-share2__container_size_l .ya-share2__badge .ya-share2__icon {
+			width: 40px;
+			height: 40px;
+		}
+
+		& .ya-share2__container_shape_round.ya-share2__container_size_l .ya-share2__badge .ya-share2__icon:not(.ya-share2__icon_messenger-contact):not(.ya-share2__icon_more):not(.ya-share2__icon_copy) {
+			background-size: 30px 40px;
+		}
+	}
 }
 
 .main-btn {
@@ -125,14 +152,26 @@
 
 	transition: all 0.3s ease;
 
+	&:hover:not(.--gray) {
+		background: linear-gradient(91.64deg, rgba(255, 255, 255, 0.2) 4.31%, rgba(255, 255, 255, 0.074) 34.35%), linear-gradient(278.57deg, rgba(255, 255, 255, 0.2) 9.56%, rgba(255, 255, 255, 0.034) 39.77%), linear-gradient(91.77deg, rgba(255, 255, 255, 0.2) 8.82%, rgba(255, 255, 255, 0.058) 36.64%), #ff502f;
+	}
+
+	&:active:not(.--gray) {
+		box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2);
+	}
+
 	&.--gray {
 		background: #eeeeee;
 		box-shadow: -2.17893px -2.17893px 6.5368px #ffffff, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
 		color: #13293d;
 	}
 
-	&.--gray:hover {
+	&.--gray:active {
 		box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2);
+	}
+
+	&.--gray:hover {
+		background: linear-gradient(90.52deg, rgba(174, 174, 192, 0.186) 38.89%, rgba(174, 174, 192, 0.042) 67.38%), #ededed;
 	}
 }
 
@@ -157,6 +196,34 @@
 			padding: 15px 20px;
 			font-size: 14px;
 			min-height: 330px;
+		}
+
+		&__share-text {
+			font-size: 14px;
+			margin-right: 15px;
+		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.card-start {
+		&__logo {
+			order: 1;
+			margin-bottom: 10px;
+		}
+
+		&__button {
+			order: 2;
+			margin-bottom: 10px;
+		}
+
+		&__share {
+			order: 3;
+			width: 100%;
+		}
+
+		&__bottom {
+			flex-wrap: wrap;
 		}
 	}
 }
@@ -212,12 +279,28 @@
 			font-size: 12px;
 		}
 
-		&__logo {
-			margin-bottom: 10px;
-		}
-
 		&__bottom {
 			flex-direction: column;
+			align-items: center;
+		}
+
+		&__share {
+			width: initial;
+		}
+
+		&__share-text {
+			font-size: 12px;
+		}
+
+		&__share-yandex {
+			& .ya-share2__container_size_l .ya-share2__badge .ya-share2__icon {
+				width: 30px;
+				height: 30px;
+			}
+
+			& .ya-share2__container_shape_round.ya-share2__container_size_l .ya-share2__badge .ya-share2__icon:not(.ya-share2__icon_messenger-contact):not(.ya-share2__icon_more):not(.ya-share2__icon_copy) {
+				background-size: 20px 40px;
+			}
 		}
 	}
 }
