@@ -50,9 +50,9 @@
 
 	&__image-left {
 		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translate(-30%, -50%);
+		top: 17%;
+		left: -4%;
+		// transform: translate(-30%, -50%);
 		z-index: 3;
 		& img {
 			max-height: 280px;
@@ -62,9 +62,9 @@
 
 	&__image-right {
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		top: -10%;
+		left: 33%;
+		// transform: translate(-50%, -50%);
 		z-index: 3;
 		& img {
 			max-height: 310px;
@@ -221,25 +221,25 @@
 
 @keyframes swing {
 	0% {
-		transform: rotateZ(3deg) translate(-50%, -50%);
+		transform: rotateZ(5deg);
 	}
 
 	100% {
-		transform: rotateZ(-3deg) translate(-50%, -50%);
+		transform: rotateZ(-5deg);
 	}
 }
 
 @keyframes swing2 {
 	0% {
-		transform: rotateZ(0deg) translate3d(-30%, -50%, 0) rotateZ(0deg);
+		transform: rotateZ(0deg) translate3d(0, 0%, 0) rotateZ(0deg);
 	}
 
 	50% {
-		transform: rotateZ(20deg) translate3d(-30%, -50%, 0) rotateZ(-20deg);
+		transform: rotateZ(20deg) translate3d(0%, 0%, 0) rotateZ(-20deg);
 	}
 
 	100% {
-		transform: rotateZ(0deg) translate3d(-30%, -50%, 0) rotateZ(0deg);
+		transform: rotateZ(0deg) translate3d(0%, 0%, 0) rotateZ(0deg);
 	}
 }
 
@@ -381,26 +381,28 @@
 
 	.card-variant {
 		&__image-left {
-			transform: translate(0, -50%);
+			left: -1.5%;
+
+			// transform: translate(0, -50%);
 		}
 
 		&__image-right {
-			transform: translate(-30%, -50%);
-			left: 55%;
+			// transform: translate(-30%, -50%);
+			// left: 55%;
 		}
 	}
 
 	@keyframes swing2 {
 		0% {
-			transform: rotateZ(0deg) translate3d(-20%, -50%, 0) rotateZ(0deg);
+			transform: rotateZ(0deg) translate3d(0, 0, 0) rotateZ(0deg);
 		}
 
 		50% {
-			transform: rotateZ(20deg) translate3d(-20%, -50%, 0) rotateZ(-20deg);
+			transform: rotateZ(20deg) translate3d(0, 0, 0) rotateZ(-20deg);
 		}
 
 		100% {
-			transform: rotateZ(0deg) translate3d(-20%, -50%, 0) rotateZ(0deg);
+			transform: rotateZ(0deg) translate3d(0, 0, 0) rotateZ(0deg);
 		}
 	}
 }
@@ -536,6 +538,7 @@
 
 	.card-variant {
 		&__image-left {
+			top: 30%;
 			& img {
 				max-height: 100px;
 			}
@@ -579,6 +582,7 @@
 		}
 
 		&__image-left {
+			top: 20%;
 			& img {
 				max-height: 85px;
 			}
