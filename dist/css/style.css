@@ -450,6 +450,7 @@ h2 {
     background-size: 30px 40px; }
 
 .main-btn {
+  -webkit-tap-highlight-color: transparent;
   display: block;
   padding: 13px 15px;
   max-width: 200px;
@@ -999,6 +1000,7 @@ h2 {
   .card-variant__top {
     height: 130px; }
   .card-variant__image-left {
+    left: -5%;
     top: 20%; }
     .card-variant__image-left img {
       max-height: 85px; }

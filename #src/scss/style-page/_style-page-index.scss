@@ -134,6 +134,8 @@
 }
 
 .main-btn {
+	-webkit-tap-highlight-color: transparent;
+
 	display: block;
 	padding: 13px 15px;
 	max-width: 200px;
