@@ -1,0 +1,84 @@
+body {
+	font-family: "Intro";
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 120%;
+	letter-spacing: 0.01em;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title-h1,
+h1 {
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 100%;
+	color: #17293b;
+}
+
+.title-h2,
+h2 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 120%;
+	color: #17293b;
+}
+
+@media (max-width: 1350px) {
+	.title-h1,
+	h1 {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 1170px) {
+	.title-h2,
+	h2 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 900px) {
+	.title-h1,
+	h1 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.title-h1,
+	h1 {
+		font-size: 24px;
+	}
+
+	.title-h2,
+	h2 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 500px) {
+	.title-h1,
+	h1 {
+		font-size: 18px;
+	}
+
+	.title-h2,
+	h2 {
+		font-size: 16px;
+	}
+}
