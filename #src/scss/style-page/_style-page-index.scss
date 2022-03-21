@@ -154,10 +154,6 @@
 
 	transition: all 0.3s ease;
 
-	&:hover:not(.--gray) {
-		box-shadow: -2.17893px -2.17893px 6.5368px #7e7c7c, 2.17893px 2.17893px 6.5368px rgba(174, 174, 192, 0.4);
-	}
-
 	&:active:not(.--gray) {
 		box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, 0.2);
 	}
@@ -211,12 +207,12 @@
 	.card-start {
 		&__logo {
 			order: 1;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 
 		&__button {
 			order: 2;
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 
 		&__share {
@@ -278,7 +274,6 @@
 
 		&__text {
 			padding: 10px;
-			font-size: 12px;
 		}
 
 		&__bottom {
@@ -288,21 +283,15 @@
 
 		&__share {
 			width: initial;
+			flex-direction: column;
 		}
 
 		&__share-text {
-			font-size: 12px;
+			margin-right: 0;
+			margin-bottom: 15px;
 		}
 
 		&__share-yandex {
-			& .ya-share2__container_size_l .ya-share2__badge .ya-share2__icon {
-				width: 30px;
-				height: 30px;
-			}
-
-			& .ya-share2__container_shape_round.ya-share2__container_size_l .ya-share2__badge .ya-share2__icon:not(.ya-share2__icon_messenger-contact):not(.ya-share2__icon_more):not(.ya-share2__icon_copy) {
-				background-size: 20px 40px;
-			}
 		}
 	}
 }
