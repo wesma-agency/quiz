@@ -231,15 +231,15 @@
 
 @keyframes swing2 {
 	0% {
-		transform: rotateZ(0deg) translate3d(0, 0%, 0) rotateZ(0deg);
+		transform: rotateZ(0deg) translate3d(0, -10%, 0) rotateZ(0deg);
 	}
 
 	50% {
-		transform: rotateZ(20deg) translate3d(0%, 0%, 0) rotateZ(-20deg);
+		transform: rotateZ(20deg) translate3d(0, -10%, 0) rotateZ(-20deg);
 	}
 
 	100% {
-		transform: rotateZ(0deg) translate3d(0%, 0%, 0) rotateZ(0deg);
+		transform: rotateZ(0deg) translate3d(0, -10%, 0) rotateZ(0deg);
 	}
 }
 
@@ -389,20 +389,6 @@
 		&__image-right {
 			// transform: translate(-30%, -50%);
 			// left: 55%;
-		}
-	}
-
-	@keyframes swing2 {
-		0% {
-			transform: rotateZ(0deg) translate3d(0, -10%, 0) rotateZ(0deg);
-		}
-
-		50% {
-			transform: rotateZ(20deg) translate3d(0, -10%, 0) rotateZ(-20deg);
-		}
-
-		100% {
-			transform: rotateZ(0deg) translate3d(0, -10%, 0) rotateZ(0deg);
 		}
 	}
 }
