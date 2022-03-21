@@ -480,6 +480,15 @@
 }
 
 @media (max-width: 768px) {
+	.quiz-slider {
+		&__slide {
+			&:not(.swiper-slide-active) {
+				height: 0;
+				overflow: hidden;
+			}
+		}
+	}
+
 	.card-variant {
 		&__image-left {
 			& img {

@@ -875,6 +875,9 @@ h2 {
     border-radius: 10px; } }
 
 @media (max-width: 768px) {
+  .quiz-slider__slide:not(.swiper-slide-active) {
+    height: 0;
+    overflow: hidden; }
   .card-variant__image-left img {
     max-height: 100px; }
   .card-variant__group-question {
